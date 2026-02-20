@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whac-A-Mole</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="timer">Time: <span id="time-left">30</span>s</div>
+
+    <header id="header">
+        <h1>Welcome to Whac-A-Mole</h1>
+        <p id="score">Let's Go, your total Score is: <span id="score-value">0</span></p>
+        <div id="btn-group">
+            <button id="toggle-btn">Start Game</button>
+        </div>
+    </header>
+
+    <div id="board">
+        <div class="block" data-index="0">
+            <div class="hole"></div>
+        </div>
+        <div class="block" data-index="1">
+            <div class="hole"></div>
+        </div>
+        <div class="block" data-index="2">
+            <div class="hole"></div>
+        </div>
+        <div class="block" data-index="3">
+            <div class="hole"></div>
+        </div>
+        <div class="block" data-index="4">
+            <div class="hole"></div>
+        </div>
+        <div class="block" data-index="5">
+            <div class="hole"></div>
+        </div>
+        <div class="block" data-index="6">
+            <div class="hole"></div>
+        </div>
+        <div class="block" data-index="7">
+            <div class="hole"></div>
+        </div>
+        <div class="block" data-index="8">
+            <div class="hole"></div>
+        </div>
+        <div class="block" data-index="9">
+            <div class="hole"></div>
+        </div>
+        <div class="block" data-index="10">
+            <div class="hole"></div>
+        </div>
+        <div class="block" data-index="11">
+            <div class="hole"></div>
+        </div>
+    </div>
+
+    <div id="popup-overlay">
+        <div id="popup-box">
+            <h2>Time's Up!</h2>
+            <h2>Congratulations!</h2>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <button id="popup-close-btn">Play Again</button>
+        </div>
+    </div>
+
+    <div id="snake-popup-overlay">
+        <div id="snake-popup-box">
+            <h2>You hit a Snake!</h2>
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="snake-final-score">0</span></p>
+            <button id="snake-popup-close-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="controller.js"></script>
+</body>
+
+</html>

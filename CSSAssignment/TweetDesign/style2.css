@@ -39,20 +39,17 @@ body {
 
 .name {
     color: #000;
-    font-family: sans-serif;
     font-size: 15px;
     font-weight: bold;
 }
 
 .metadata {
     color: #71767b;
-    font-family: sans-serif;
     font-size: 15px;
 }
 
 .message {
     color: #0f1419;
-    font-family: sans-serif;
     font-size: 15px;
     margin-top: 4px;
 }
@@ -65,18 +62,11 @@ body {
 }
 
 .action {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.action svg {
-    width: 16px;
-    height: 16px;
-    fill: #536471;
-}
-
-.count {
     color: #536471;
     font-size: 13px;
+    cursor: pointer;
+}
+
+.action:hover {
+    color: #1d9bf0;
 }
